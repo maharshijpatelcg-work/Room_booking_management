@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #F4F3EF;
+    color: #1B1A2E;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F4F3EF;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E4E2DA;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0F766E;
+  }
+}
+
+@layer utilities {
+  .font-ref {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0F766E;
+    letter-spacing: 0.01em;
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #E4E2DA;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1B1A2E;
+    letter-spacing: -0.02em;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+    color: #55536B;
+    margin-top: 2px;
+  }
+}
